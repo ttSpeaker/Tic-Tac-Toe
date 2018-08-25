@@ -1,0 +1,47 @@
+body {
+  font-family: monospace;
+  text-align: center;
+}
+#board {
+  font-size: 5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+
+}
+
+.square {
+  position: relative;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.square::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.square .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  /* transform: translate(0, 50%); */
+}
+
+#box1, #box2, #box3 {
+  border-top: none;
+}
+#box3, #box6, #box9 {
+  border-right: none;
+}
+#box7, #box8, #box9 {
+  border-bottom: none;
+}
+#box1, #box4, #box7 {
+  border-left: none;
+}
