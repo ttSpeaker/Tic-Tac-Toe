@@ -1,2 +1,2 @@
 # Tic-Tac-Toe Game
-## https://codepen.io/ttspeaker/full/wEMoEZ
+## https://ttspeaker.github.io/Tic-Tac-Toe/
